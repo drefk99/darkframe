@@ -1,0 +1,43 @@
+(env) [administradorcito@localhost blitzkrieg]$ ./manage.py shell
+Python 3.6.0 (default, Jan 19 2017, 16:59:54) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-11)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from polls.models import Question
+>>> question = Question(question_text="What's your name?", pub_date=timezone.now())
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'timezone' is not defined
+>>> from django.utils import timezone
+>>> question = Question(question_text="What's your name?", pub_date=timezone.now())
+>>> question.id
+>>> question.save()
+>>> question.id
+1
+>>> question.question_text
+"What's your name?"
+>>> question.question_date
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'Question' object has no attribute 'question_date'
+>>> question.pub_date
+datetime.datetime(2017, 3, 10, 19, 7, 5, 223085, tzinfo=<UTC>)
+>>> from polls.models import Choice
+>>> choice = Choice.objects.create(question=question, choice_text='Fred')
+>>> choice.id
+1
+>>> choice.question
+<Question: Question object>
+>>> Question.objects.create(question_text="What's your address?", pub_date=timezone.now())
+<Question: Question object>
+>>> all_questons = Question.objects.all()
+>>> all_questons
+<QuerySet [<Question: Question object>, <Question: Question object>]>
+>>> all_questons[0]
+<Question: Question object>
+>>> all_questons[0].question_text
+"What's your name?"
+>>> all_questons[1].question_text
+"What's your address?"
+>>> 
+
