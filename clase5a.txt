@@ -1,0 +1,70 @@
+  564  cat settings.py | less
+  565  cd ..
+  566  ./manage.py runserver
+  567  ./manage.py makemigrations
+  568  ./manage.py migrate
+  569  ./manage.py runserver localhost:8080
+  570  ls
+  571  su postgres
+  572  su 
+  573  ls
+  574  ./manage.py createuser admin
+  575  ./manage.py createsuperuser admin
+  576  ./manage.py createsuperuser
+  577  ./manage.py runserver
+  578  su 
+  579  ./manage.py runserver
+  580  ./manage.py y makemigrations
+  581  ./manage.py makemigrations
+  582  sudo ./manage.py makemigrations
+  583  systemctl status postgresql
+  584  ./manage.py makemigrations
+  585  sudo ./manage.py makemigratio
+  586  ./manage.py makemigr
+  587  ./manage.py makemigrations
+  588  ./manage.py migrate
+  589   psql -h 127.0.0.1 -U masbee -W beeva_test
+  590   psql -h 127.0.0.1 -U masbee 
+  591   psql -h 127.0.0.1 -Umasbee 
+  592   psql -Umasbee 
+  593  beeva
+  594   psql -Umasbee 
+  595  beeva
+  596   psql -Umasbee 
+  597   psql -U masbee 
+  598   psql masbee 
+  599   psql -U masbee -W beeva_test
+  600   psql -h localhost-U masbee -W beeva_test
+  601   psql -h localhost -U masbee -W beeva_test
+  602   psql -h 127.0.0.1 -U masbee -W beeva_test
+  603  ./manage.py makemigrations
+  604  ls
+  605  ./manage.py makemigrations
+  606   psql -h 127.0.0.1 -U masbee -W beeva_test
+  607   psql -W-U masbee 
+  608   psql -W -U masbee 
+  609   psql -W beeva_test -U masbee 
+  610   psql -W  -U masbeeadministradorcito
+  611   psql -W  -U administradorcito
+  612   psql -h 127.0.0.1 -U masbee -W beeva_test
+  613   psql -h -U masbee -W beeva_test
+  614   psql -U masbee -W beeva_test
+  615   psql -U masbee -W beeva_test -h 127.0.0.1
+  616  ./manage.py makemigrations
+  617  sudo ./manage.py makemigrations
+  618  ./manage.py makemigrations
+  619  ./manage.py migrate
+  620  ./manage.py runserver
+  621  ./manage.py makemigrations
+  622  ./manage.py migrate
+  623  ./manage.py runserver
+  624  ./manage.py createsuperuser
+  625  ./manage.py runserver
+  626  ./manage.py makemigrations
+  627  ./manage.py migrate
+  628  ./manage.py shell
+  629  history | tail -20
+  630  history | tail -30
+  631  history | tail -70
+  632  cd ..
+  633  history | tail -70 > clase5a.txt
